@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>I Market - Compre onde estiver</title>
+    <link rel="icon" href="/imagens/Logos/icon.png">
+
+    <!-- Bootstrap -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/estilo.css" type="text/css" rel="stylesheet">
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+    
+   <!-- Nav -->
+    <nav class="navbar navbar-fixed-top navbar-inverse navbar-transparente " >
+      <!-- Nav container -->
+      <div class="container">
+        <!-- Header -->
+          <div class="navbar-header">
+
+            <!--Butão toggle-->
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#barra-nav">
+              <span class="sr-only">alternar navegação</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <!-- Logo icon -->
+            <a href="index.html" class="navbar-brand">
+                <span class="img-logo">IMARKET</span>
+              </a>
+
+          </div>
+        <!-- Navbar -->
+          <div class="collapse navbar-collapse" id="barra-nav">
+          <!-- Opcoes -->
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="/">Home</a></li>
+              <li><a href="/abouts/about">Sobre nós</a></li>
+              <li><a href="/content/conteudo">Conteudo</a></li>
+              <li><a href="/carrinhos/carrinho">Carrinho</a></li>
+              <li class="dropdown"> 
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"> 
+                            Minha Conta <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li data-toggle="modal" data-target="#janela-logar"> <a href="#">Entrar</a> </li>
+                            <li data-toggle="modal" data-target="#janela-cadastro"> <a href="#">Cadastrar</a> </li>
+                        </ul>
+              </li>
+            </ul>
+          <!--Fim Opcoes -->
+          </div>
+        <!--Fim Navbar -->
+      </div>
+      <!--Fim container -->
+      
+    </nav>
+    <!--Fim Nav-->
+
+    <!--  Janela Modal Login -->
+    <form class="modal fade" id="janela-logar">
+                <!-- Modal dialog -->
+                <div class="modal-dialog">
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                        <!-- Cabeçalho -->
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">
+                                <span>&times;</span>
+                            </button>
+                            <h4 class="modal-title"> Efetuar Login </h4>
+                        </div>
+                        <!-- Fim Cabeçalho -->
+
+                        <!-- Corpo -->
+                        <div class="modal-body">
+                            <div class="form-group">
+                                <input type="email" class="form-control" id="email" placeholder="Digite o seu e-mail">
+                            </div>
+                            <div class="form-group">
+                                <input type="password" class="form-control" id="pass" placeholder="Digite a sua senha">
+                            </div>
+                        </div>
+                        <!-- Fim Corpo -->
+
+                        <!-- Rodapé -->
+                        <div class="modal-footer">
+
+                            <button type="button" class="btn btn-default" data-dismiss="modal">
+                                Cancelar
+                            </button>
+
+                            <button type="submit" class="btn btn-primary">
+                                Logar
+                            </button>
+
+                        </div>
+                        <!-- Fim Rodapé -->
+                    </div>
+                    <!-- Fim Modal content -->
+                </div>
+                <!-- Fim Modal dialog -->
+    </form>
+    <!-- Fim Janela -->
+    <!--  Janela Modal Login -->
+    <form class="modal fade" id="janela-cadastro">
+                <!-- Modal dialog -->
+                <div class="modal-dialog">
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                        <!-- Cabeçalho -->
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">
+                                <span>&times;</span>
+                            </button>
+                            <h4 class="modal-title"> Cadastre-se </h4>
+                        </div>
+                        <!-- Fim Cabeçalho -->
+
+                        <!-- Corpo -->
+                        <div class="modal-body">
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="nome" placeholder="Digite o seu Nome">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="endereco" placeholder="Digite a sua Endereço">
+                            </div>
+                            <div class="form-group">
+                                <input type="tel" class="form-control" id="numero" placeholder="Digite o seu Numero">
+                            </div>
+                            <div class="form-group">
+                                <input type="email" class="form-control" id="email" placeholder="Digite a sua Email">
+                            </div>
+                            <div class="form-group">
+                                <input type="password" class="form-control" id="passwd" placeholder="Digite a sua senha">
+                            </div>
+                        </div>
+                        <!-- Fim Corpo -->
+
+                        <!-- Rodapé -->
+                        <div class="modal-footer">
+
+                            <button type="button" class="btn btn-default" data-dismiss="modal">
+                                Cancelar
+                            </button>
+
+                            <button type="submit" class="btn btn-primary">
+                                Cadastrar
+                            </button>
+
+                        </div>
+                        <!-- Fim Rodapé -->
+                    </div>
+                    <!-- Fim Modal content -->
+                </div>
+                <!-- Fim Modal dialog -->
+            </form>
+            <!-- Fim Janela -->
+    
+    <div class="container">
+      
+        <div id="myCarousel" class="carousel slide espaco" data-ride="carousel">
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner">
+
+              <div class="item active">
+                  <img src="/imagens/Slides/pimenta.jpg" alt="Los Angeles" style="width:100%;">
+              </div>
+
+              <div class="item">
+                  <img src="/imagens/Slides/salada.png" alt="Chicago" style="width:100%;">
+              </div>
+
+              <div class="item">
+                  <img src="/imagens/Slides/suco.jpg" alt="New York" style="width:100%;">
+              </div>
+                    
+          </div>
+
+          <!-- Left and right controls -->
+            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right"></span>
+              <span class="sr-only">Next</span>
+            </a>
+        </div>
+
+        <section>
+          <ul class="nav nav-tabs nav-justified bg" role="tablist">
+            <li class="active"><a role="tab" data-toggle="tab" href="#fru">Frutas</a></li>
+            <li><a href="#leg" role="tab" data-toggle="tab">Legumes</a></li>
+            <li><a href="#ved" role="tab" data-toggle="tab">Verduras</a></li>
+          </ul>
+        </section>
+        
+        <section>
+          <div class="container-fluid bg2">
+            
+          <div class="tab-content">
+            <div class="tab-pane active" role="tabpanel" id="fru">
+              <h3>Frutas</h3>
+              <div class="row">
+
+                <!-- Campo 1-->
+                <div class="col-sm-5 col-md-3">
+                  <div class="thumbnail">
+                    <img src="/imagens/Frutas/banana.jpg" alt="Banana-Prata">
+                    <div class="caption">
+                      <h3>Banana Prata</h3>
+                      <p>É a fruta mais popular do Brasil e um dos símbolos de países tropicais, a banana prata é também chamada de banana anã grande...</p>
+                       <p align="center"><a href="#" class="btn btn-primary" role="button">Ver Mais</a></p>
+                    </div>
+                  </div>
+                </div>
+                <!-- Fim cmapo 1 -->
+
+                <!-- Campo 2-->
+                <div class="col-sm-5 col-md-3">
+                  <div class="thumbnail">
+                    <img src="/imagens/Frutas/manga.jpg" alt="Manga-Palmer">
+                    <div class="caption">
+                      <h3>Manga Palmer</h3>
+                      <p>A manga é rica em proteínas como potássio, magnésio e ferro, além de vitamina A, do complexo B e C. É ótima no combate a câimbras...</p>
+                       <p align="center"><a href="#" class="btn btn-primary" role="button">Ver Mais</a></p>
+                    </div>
+                  </div>
+                </div>
+                <!-- Fim Campo 2 -->
+
+                <!-- Campo 3 -->
+                <div class="col-sm-5 col-md-3">
+                  <div class="thumbnail">
+                    <img src="/imagens/Frutas/mamao.jpg" alt="Mamao-Papaya">
+                    <div class="caption">
+                      <h3>Mamão Papaya</h3>
+                      <p>O mamão Papaya auxiliaa no aumento da qualidade de vida em razão das suas casca e polpa, com quantidade de nutrientes próprios...</p>
+                       <p align="center"><a href="#" class="btn btn-primary" role="button">Ver Mais</a></p>
+                    </div>
+                  </div>
+                </div>
+                <!-- Fim Campo 3 -->
+
+                <!-- Campo 4 -->
+                <div class="col-sm-5 col-md-3">
+                  <div class="thumbnail">
+                    <img src="/imagens/Frutas/laranja.jpg" alt="Laranja-Pera">
+                    <div class="caption">
+                      <h3>Laranja Pera</h3>
+                      <p>A laranja pera é rica em sais minerais como o cálcio, potássio, sódio e fósforo e vitaminas do complexo B...</p>
+                       <p align="center"><a href="#" class="btn btn-primary" role="button">Ver Mais</a></p>
+                    </div>
+                  </div>
+                </div>
+                <!-- Fim Campo 4-->
+
+              </div>
+            </div>
+
+
+            <!-- Painel Legumes -->
+            <div class="tab-pane" role="tabpanel" id="leg">
+              <h3>Legumes</h3>
+              <!-- Row -->
+              <div class="row">
+                
+                <!-- Campo 1-->
+                <div class="col-sm-5 col-md-3">
+                  <div class="thumbnail">
+                    <img src="/imagens/Legumes/batata.jpg" alt="batata">
+                    <div class="caption">
+                      <h3>Batata</h3>
+                      <p>A batata é um dos alimentos mais importantes como fonte de energia, por ser rica em carboidratos ou açúcares, principalmente o amido, um polissacarídeo...</p>
+                       <p align="center"><a href="#" class="btn btn-primary" role="button">Ver Mais</a></p>
+                    </div>
+                  </div>
+                </div>
+                <!-- Fim cmapo 1 -->
+
+                <!-- Campo 2-->
+                <div class="col-sm-5 col-md-3">
+                  <div class="thumbnail">
+                    <img src="/imagens/Legumes/cenoura.jpg" alt="Cenoura-500g">
+                    <div class="caption">
+                      <h3>Cenoura</h3>
+                      <p>Somente cenouras selecionadas e frescas para suas melhores receitas. A cenoura é um vegetal que oferece muitos nutrientes ao organismo, rica em vitaminas...</p>
+                      <p align="center"><a href="/produtos/cenoura" class="btn btn-primary" role="button">Ver Mais</a></p>
+                    </div>
+                  </div>
+                </div>
+                <!-- Fim Campo 2 -->
+
+                <!-- Campo 3 -->
+                <div class="col-sm-5 col-md-3">
+                  <div class="thumbnail">
+                    <img src="/imagens/Legumes/cebola.jpg" alt="Cebola">
+                    <div class="caption">
+                      <h3>Cebola Nacional</h3>
+                      <p>As cebolas são uma boa fonte de cromo, o componente mineral na tolerância à glicose, uma molécula que ajuda as células a responderem adequadamente à insulina...</p>
+                      <p align="center"><a href="#" class="btn btn-primary" role="button">Ver Mais</a></p>
+                    </div>
+                  </div>
+                </div>
+                <!-- Fim Campo 3 -->
+
+                <!-- Campo 4 -->
+                <div class="col-sm-5 col-md-3">
+                  <div class="thumbnail">
+                    <img src="/imagens/Legumes/abobora.jpg" alt="Abobora">
+                    <div class="caption">
+                      <h3>Abobora Japonesa</h3>
+                      <p>A abóbora pertence ao grupo das hortaliças, que é composto pelas verduras e legumes. Em sua composição nutricional você encontra ...</p>
+                      <p align="center"><a href="#" class="btn btn-primary" role="button">Ver Mais</a></p>
+                    </div>
+                  </div>
+                </div>
+                <!-- Fim Campo 4-->
+
+              </div>
+              <!-- Fim Row -->
+            </div>
+            <!-- Painel Legumes -->
+
+
+
+            <!-- Painel Verduras -->
+            <div class="tab-pane" role="tabpanel" id="ved">
+              <h3>Verduras</h3>
+              <!-- Row -->
+              <div class="row">
+                  
+                <!-- Campo 1-->
+                <div class="col-sm-5 col-md-3">
+                  <div class="thumbnail">
+                    <img src="/imagens/Verduras/alface.jpg" alt="alface">
+                    <div class="caption">
+                      <h3>Alface Crespa</h3>
+                      <p>Alface crespa, somente produtos selecionados e frescos. Esta alface tem formato semelhante ao da alface lisa, com folhas soltas...</p>
+                      <p align="center"><a href="/produtos/alface" class="btn btn-primary"  role="button">Ver Mais</a></p>
+                    </div>
+                  </div>
+                </div>
+                <!-- Fim cmapo 1 -->
+
+                <!-- Campo 2-->
+                <div class="col-sm-5 col-md-3">
+                  <div class="thumbnail">
+                    <img src="/imagens/Verduras/repolho.jpg" alt="repolho">
+                    <div class="caption">
+                      <h3>Repolho Branco</h3>
+                      <p>Repolho branco, somente hortaliças frescas e cuidadosamente selecionadas. Rico em vitamina C, fonte de fibras, potássio e com ...</p>
+                      <p align="center"><a href="/produtos/repolho" class="btn btn-primary" role="button">Ver Mais</a></p>
+                    </div>
+                  </div>
+                </div>
+                <!-- Fim Campo 2 -->
+
+                <!-- Campo 3 -->
+                <div class="col-sm-5 col-md-3">
+                  <div class="thumbnail">
+                    <img src="/imagens/Verduras/nabo.jpg" alt="nabo">
+                    <div class="caption">
+                      <h3>Nabo Camilo</h3>
+                      <p>O nabo é uma raiz para ser comida cozida acompanhada de arroz e de legumes. Ela é rica em potássio e de baixo valor calórico...</p>
+                      <p align="center"><a href="#" class="btn btn-primary"  role="button">Ver Mais</a></p>
+                    </div>
+                  </div>
+                </div>
+                <!-- Fim Campo 3 -->
+
+                <!-- Campo 4 -->
+                <div class="col-sm-5 col-md-3">
+                  <div class="thumbnail">
+                    <img src="/imagens/Verduras/alho-poro.jpg" alt="alho-poro">
+                    <div class="caption">
+                      <h3>Alho Poró</h3>
+                      <p>O alho-poró está cada vez mais presente nas mesas dos consumidores brasileiros, seja em uma salada ou no preparo de ...</p>
+                      <p align="center"><a href="/produtos/alho" class="btn btn-primary" role="button">Ver Mais</a></p>
+                    </div>
+                  </div>
+                </div>
+                <!-- Fim Campo 4-->
+                
+              </div>
+              <!-- /Row -->
+            </div>
+            <!-- / Painel Verduras-->
+          </div>
+        </section>
+
+    </div>
+
+    <footer id="rodape">
+      <div class="container">
+        <div class="row" align="center">
+              <br>
+              <span class="img-logo">IMARKET</span><br>
+        </div>
+
+        <div class="row">
+          <p class="text-center text-white">Copyright &copy; I-Market 2018 Todos os direitos reservados.</p>
+          <p class="text-center text-white">Desing by Thiago Alexandria</p>
+        </div>
+      </div>      
+    </footer>
+    
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/webjars/jquery-mask-plugin/dist/jquery.mask.min.js"></script>
+  </body>
+</html>
